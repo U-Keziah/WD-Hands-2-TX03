@@ -9,15 +9,13 @@
     position: relative;
     background-color: beige;
     width: 100vw;
-    height: 90vh;
+    height: 85vh;
 
     & .gojo01 {
         position: absolute;
         object-fit: cover;
-        width: 800px;
-        height: 900px;
-        bottom: 0px;
-        right: 550px;
+        bottom:0%;
+        left: 32%;
         z-index: -1;
     }
 
@@ -33,7 +31,7 @@
     }
 
     & .container_01 h1 {
-        font-size: 200px;
+        font-size: 150px;
         width: 75vw;
         text-align: center;
         color: white;
