@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.section_02 {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    & .container_02{
+        width: 70vw;
+        height: 65vh;;
+    }
+
+    & .container_01 {
+        margin: 25px;
+        width: 70vw;
+        height: 65vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+    &::before {
+        content: ""; /* add this line */
+        position: absolute; /* add this line */
+        top: 0; /* add this line */      
+        left: 0; /* add this line */
+        width: 100%; /* add this line */
+        height: 100%; /* add this line */
+        filter: blur(3px);
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+        background-image: url(../img/bgSky.jpg); 
+    } 
+}
+
+    & .left_container_01 {
+        width: 20vw;
+        padding-left: 20px;
+    }
+
+    & .right_container_01 {
+
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+        height: 30vh;
+        padding: 20px;
+
+    & .r_c_01_top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     }
+
+          
+    & .r_c_01_middle{
+
+        &  h1 {
+            font-size: 70px;
+        }
+
+        &  h3 {
+            padding-top: 10px;
+            font-size: 25px;
+        }
+    }
+
+    & .r_c_01_bottom {
+        padding-top: 25px;
+    }
+
+ }
+
+}
