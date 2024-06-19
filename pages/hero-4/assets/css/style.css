@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.section_04 {
+
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 95vh;
+    background-color: aquamarine;
+
+    & .S4_image img{
+        object-fit: cover;
+        width: 25vw;
+        height: 95vh;
+    }
+
+    & .S4_containers {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+   & .S4_container_02{
+       background-color: rgb(121, 167, 197);
+        padding: 30px;
+        height: 70vh;
+        width: 65vw;
+        gap: 35px;
+        display: flex;
+        justify-content: space-around;
+        
+        
+
+       & .S4-image img {
+        object-fit: cover;
+        width: 200px;
+        height: 500px;
+       }
+   }
+
+}
