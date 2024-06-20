@@ -28,14 +28,19 @@
         z-index: 1;
         background: linear-gradient(rgb(128, 128, 181), rgb(192, 95, 95)); 
         
+        & p {
+            text-align: justify;
+        }
+
+        & h1 {
+            font-size: 150px;
+            width: 75vw;
+            text-align: center;
+            color: white;
+            }
     }
 
-    & .container_01 h1 {
-        font-size: 150px;
-        width: 75vw;
-        text-align: center;
-        color: white;
-        }
+  
 
     & .middle_container_nav {
         display: flex;
