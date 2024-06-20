@@ -4,7 +4,7 @@
 }
 
 .section_02 {
-    background-color: aqua;
+    background-color:#52756e;
     display: flex;
     flex-direction: row;
 
@@ -17,7 +17,12 @@
         height: 65vh;
     
     & .c_02_text {
+        text-align: center;
         padding: 25px;
+
+        & h1 {
+            font-size: 35px;
+        }
         }
 
     & .c_02_nav {
@@ -25,9 +30,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    }
+
+    & .column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:90px;
+        height: 45px;
+        border-radius: 25px;
+        background-color: #f7e8ad;
+        
     }
 
+    }
+   
+}
 
     & .container_01 {
         margin: 25px;
@@ -54,12 +71,12 @@
         z-index: -1;
         background-image: url(../img/bgSky.jpg); 
     } 
-}
 
     & .left_container_01 {
         width: 20vw;
         padding-left: 20px;
     }
+
 
     & .right_container_01 {
 
@@ -76,6 +93,7 @@
 
           
     & .r_c_01_middle{
+        
 
         &  h1 {
             font-size: 70px;
@@ -89,8 +107,27 @@
 
     & .r_c_01_bottom {
         padding-top: 25px;
+        padding-bottom: 25px;
+
+    
+        & .icons_nav {
+            display: flex;
+            justify-content: space-between;
+            width: 282px;
+
+            & i {
+                color:#52756e;
+                font-size: 25px;
+            }
+        }
     }
 
  }
+
+   
+
+}
+
+  
 
 }
