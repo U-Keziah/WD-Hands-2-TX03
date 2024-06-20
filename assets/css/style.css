@@ -9,13 +9,13 @@
     position: relative;
     background-color: beige;
     width: 100vw;
-    height: 85vh;
+    height: 70vh;
 
     & .gojo01 {
         position: absolute;
-        object-fit: cover;
-        bottom:0%;
-        left: 35%;
+        object-fit: contain;
+        top:0%;
+        left: 29%;
         z-index: -1;
     }
 
@@ -42,12 +42,13 @@
         background: linear-gradient(90deg, beige, #3d3d75); 
         
         & p {
+        padding: 5px;
          display: flex;
         align-items: flex-end;
         font-size: 20px;
-        height: 75vh;
-        width: 10vw;
-        text-align: start;
+        height: 60vh;
+        width: 22vw;
+        line-height: 35px;
         text-align: justify;
         }
 
@@ -58,9 +59,9 @@
 
             & h1 {
                 font-size: 150px;
-                color: white;
-                -webkit-text-stroke-width: 3px;
-                -webkit-text-stroke-color: black;     
+                color: black;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: white;     
                 }
             
 

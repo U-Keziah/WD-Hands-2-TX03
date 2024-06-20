@@ -4,23 +4,44 @@
 }
 
 .section_05 {
-
-    height: 85vh; 
-    background-image: linear-gradient(to right, transparent 45%, black 55%), url('../img/maki02.jpg');
-    background-size: 100% 100%, cover;
+    
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(to right, transparent 45%, black 55%);
+    background-size: 100% 100%;
     background-position: right;
-    background-repeat: no-repeat, no-repeat;
-    background-attachment: scroll, fixed;
-
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 100vw;    
+    width: 100vw;
+  
+    ::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/maki02.jpg');
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: grayscale(1);
+        pointer-events: none;
+        z-index: -1;
+
+    }
 
     & .S51_container {
         & h3 {
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            font-size: 25px;
+            color: white;
         }
     }
 
@@ -32,6 +53,8 @@
         flex-direction: row;
         justify-content: space-around;
         width: 100vw;
+        color: white;
+
 
         & h1 {
             font-size: 85px;
@@ -39,6 +62,9 @@
         }
         & h3 {
             padding: 30px;
+        }
+        & p {
+            text-align: center;
         }
 
     }
@@ -48,14 +74,27 @@
 
     & .S52_container3 {
 
-        background-color: red;
+        
 
         & .S5_container_nav {
             display: flex;
             flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            color: white;
 
+            & h3{
+                font-size: 25px;
+                letter-spacing: 1px;
+            }
             & a {
-                padding: 35px;
+                display: flex;
+                justify-content: flex-end;
+                background-color: rgba(255, 0, 0, 0.384);
+                color: white;
+                width: 285px;
+                text-decoration: none;
+                padding: 25px;
             }
         }
     }
