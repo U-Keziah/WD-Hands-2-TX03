@@ -76,7 +76,9 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        background-color: red;
+                        background-color: rgba(153, 135, 185, 0.445);
+                        border: 2px solid white;
+                        color: white;
                         height: 80px;
                         width: 200px;
                         border-radius: 25px;
