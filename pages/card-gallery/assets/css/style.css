@@ -21,6 +21,13 @@
   }
 }
 
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
 .section_01 {
   display: flex;
   justify-content: space-around;
