@@ -56,20 +56,17 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+A website that displays Hero and Card designs that are inspired by anime Jujutsu Kaisen. In this website you can see 5 hero and 5 Cards that has animation. May this website be use for your inspiration for your upcoming projects.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Video Scrollpage
+- Dropdown Animation
+- Keyframes
+- Fade In and Out Image
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -116,4 +113,5 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| W3School | Good Website for learning new code like video link in html | https://www.w3schools.com/html/html_css.asp |
+| Every CSS Animation property | Video Explaining how animation works I learn how to use Keyframes here | https://youtu.be/_OEUbgLTWH0?si=Hxya34qEere4UKLO |
