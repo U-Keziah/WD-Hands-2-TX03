@@ -6,7 +6,7 @@
 <div align="center">
   <a href="https://github.com/U-Keziah/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/marinKatigawa01.jpg" width="200">
+    <img src="./assets/img/marin-katigawa-01.jpg" width="200">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Hands On 2</h3>
