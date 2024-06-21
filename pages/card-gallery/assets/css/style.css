@@ -222,7 +222,6 @@
     background-image: url(../img/bgBuilding01.jpg);
   }
 
- 
   & .S3_container_02 {
     display: flex;
     flex-direction: row;
@@ -267,11 +266,10 @@
           color: white;
           border-radius: 25px;
           border: 2px solid rgb(208, 194, 114);
-
         }
 
-        #start_Watch::before{
-            transform: translate(20px);       
+        #start_Watch::before {
+          transform: translate(20px);
         }
 
         #play:hover ~ .start {
@@ -279,7 +277,6 @@
           transition: all 0.5s ease;
           z-index: 1;
         }
-
       }
     }
     & .c_02_nav {
@@ -304,11 +301,18 @@
           transform: scale(1.1);
         }
       }
-
     }
   }
 }
 
+@keyframes cleanup {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 
 .section_04 {
   display: flex;
@@ -317,85 +321,196 @@
   justify-content: center;
   padding: 30px;
 
-    & .S4_container_02 {
-      background-color: rgb(121, 167, 197);
-      padding: 30px;
-      height: 70vh;
-      width: 65vw;
-      gap: 35px;
-      display: flex;
-      justify-content: center;
-      justify-content: space-around;
+  & .S4_container_02 {
+    background-color: rgb(121, 167, 197);
+    padding: 30px;
+    height: 70vh;
+    width: 65vw;
+    gap: 35px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
 
-      & .S4-image {
+    & .S4-image {
+      background-color: gray;
+      width: 200px;
+      height: 500px;
 
-        background-color: gray;
+      & .img1 {
+        object-fit: cover;
+        border: 2px solid black;
         width: 200px;
+        opacity: 0%;
         height: 500px;
+        transition: all 1s ease-out;
 
-        & img {
-          object-fit: cover;
-          border: 2px solid black;  
-          width: 200px;
-          opacity: 0%;
-          height: 500px;
-          transition: all 1s ease;
-
-          &:hover {
-            opacity: 100%;
-          }
-          
-        }
-
-      }
-      
-
-      & .S4_container_02-4 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-
-        & h1 {
-          font-size: 55px;
-          letter-spacing: 2px;
-          border-bottom: 25px solid black;
-          margin-bottom: 25px;
-        }
-
-        & h3 {
-          height: 25px;
-          margin-top: 35px;
-          font-size: 25px;
-          letter-spacing: 1px;
-        }
-
-        & .p1 {
-          letter-spacing: 1px;
-          padding-bottom: 15px;
-          border-bottom: 2px solid black;
-        }
-
-        & .p2 {
-          
-          letter-spacing: 1px;          
-          border-top: 3px solid black;
-          margin-top: 5px;
-          padding-top: 10px;
-          height: 25px;
-          width: 262px;
-
-        }
-
-        & .p3 {
-
-          letter-spacing: 1px;
-          height: 15px;
-          width: 262px;
+        &:hover {
+          animation: cleanup 1s ease 1 normal;
         }
       }
     }
 
+    & .S4-image {
+      background-color: gray;
+      width: 200px;
+      height: 500px;
+
+      & .img2 {
+        object-fit: cover;
+        border: 2px solid black;
+        width: 200px;
+        opacity: 0%;
+        height: 500px;
+        transition: all 1s ease;
+
+        &:hover {
+          animation: cleanup 1s ease 1 forwards;
+        }
+      }
+    }
+
+    & .S4-image {
+      background-color: gray;
+      width: 200px;
+      height: 500px;
+
+      & .img3 {
+        object-fit: cover;
+        border: 2px solid black;
+        width: 200px;
+        opacity: 0%;
+        height: 500px;
+        transition: all 1s ease;
+
+        &:hover {
+          animation: cleanup 1s ease 1 forwards;
+        }
+      }
+    }
+
+    & .S4_container_02-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      & h1 {
+        font-size: 55px;
+        letter-spacing: 2px;
+        border-bottom: 25px solid black;
+        margin-bottom: 25px;
+      }
+
+      & h3 {
+        height: 25px;
+        margin-top: 35px;
+        font-size: 25px;
+        letter-spacing: 1px;
+      }
+
+      & .p1 {
+        letter-spacing: 1px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid black;
+      }
+
+      & .p2 {
+        letter-spacing: 1px;
+        border-top: 3px solid black;
+        margin-top: 5px;
+        padding-top: 10px;
+        height: 25px;
+        width: 262px;
+      }
+
+      & .p3 {
+        letter-spacing: 1px;
+        height: 15px;
+        width: 262px;
+      }
+    }
+  }
 }
 
+@keyframes colorful {
+  0% {
+    color: black;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color:white;
+  }
+}
+.section_05 {
+  padding: 50px;
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  background-image: linear-gradient(to right, transparent 45%, black 55%);
+  background-size: 100% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
 
+
+  ::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../img/maki02.jpg');
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+      filter: grayscale(1);
+      z-index: -1;
+  }
+
+  & .S52_container3 {
+    display: flex;
+    justify-content: center;
+      & .S5_container_nav {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: white;
+          justify-content: space-around;
+          height: 50vh;
+
+
+          & h3{
+            position: relative;
+              font-size: 25px;
+              letter-spacing: 1px;
+              &:hover{
+                animation: colorful 3s ease infinite;
+              }
+          }
+
+
+          .dropdown::before{         
+              z-index: -2;
+              transform: translateY(20px);
+          }
+
+          #text:hover ~ .dropdown {
+            transform: translateY(10px);
+            transition: all 0.5s ease;
+          }
+
+          & a {
+              display: flex;
+              justify-content: flex-end;
+              background-color: rgba(255, 0, 0, 0.384);
+              color: white;
+              width: 285px;
+              text-decoration: none;
+              padding: 25px;
+
+          }
+      }
+  }
+}
