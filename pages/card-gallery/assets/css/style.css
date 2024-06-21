@@ -75,8 +75,7 @@
       & .middle_container_nav {
         display: flex;
         justify-content: space-evenly;
-        align-content: center;
-        width: 75vw;
+        width: 64vw;
 
         & a {
           display: flex;
@@ -440,77 +439,83 @@
     color: red;
   }
   100% {
-    color:white;
+    color: white;
   }
 }
+
 .section_05 {
-  padding: 50px;
-  position: relative;
   width: 100%;
-  height: 55vh;
-  background-image: linear-gradient(to right, transparent 45%, black 55%);
-  background-size: 100% 100%;
-  background-position: right;
-  background-repeat: no-repeat;
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
 
-
-  ::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('../img/maki02.jpg');
-      background-size: cover;
-      background-position: right;
-      background-repeat: no-repeat;
-      filter: grayscale(1);
-      z-index: -1;
-  }
-
-  & .S52_container3 {
+  .S52_container3 {
+    width: 35vw;
+    height: 85vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-      & .S5_container_nav {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          color: white;
-          justify-content: space-around;
-          height: 50vh;
+    align-items: center;
+    background-color: #3d3d75;
 
+    & .S5_container_text {
+      height: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
 
-          & h3{
-            position: relative;
-              font-size: 25px;
-              letter-spacing: 1px;
-              &:hover{
-                animation: colorful 3s ease infinite;
-              }
-          }
-
-
-          .dropdown::before{         
-              z-index: -2;
-              transform: translateY(20px);
-          }
-
-          #text:hover ~ .dropdown {
-            transform: translateY(10px);
-            transition: all 0.5s ease;
-          }
-
-          & a {
-              display: flex;
-              justify-content: flex-end;
-              background-color: rgba(255, 0, 0, 0.384);
-              color: white;
-              width: 285px;
-              text-decoration: none;
-              padding: 25px;
-
-          }
+      &:hover + .S5_container_nav {
+        transform: translateY(1vh);
+        z-index: 1;
+        transition: all 0.5s ease;
       }
-  }
+      
+
+
+      & h3 {
+        font-size: 25px;
+        letter-spacing: 1px;
+        &:hover {
+          animation: colorful 3s ease infinite;
+        }
+
+       
+      }
+    }
+    
+    
+
+
+    & .S5_container_nav {
+      position: relative;;
+      width: 45%;
+      height: 45vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      z-index: -1;
+      translate: (0px,-150vh);
+
+        & .op {
+          text-align: end;
+          background-color: rgba(255, 0, 0, 0.429);
+          color: white;
+          width: 18vw;
+          text-decoration: none;
+          padding: 15px;
+       
+         
+          ::before{
+            transform: translateY(-50vh);
+            
+        }
+      }
+    }
+ }
 }
+
+
+
