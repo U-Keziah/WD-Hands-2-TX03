@@ -15,14 +15,22 @@
     align-items: center;
     width: 70vw;
     height: 65vh;
+    color:  #f7e8ad;
 
     & .c_02_text {
       text-align: center;
       padding: 25px;
 
       & h1 {
-        font-size: 35px;
+        font-family: "Playfair Display", serif;
+        font-size: 45px;
       }
+
+      & h3 {
+        font-family: "Chivo", sans-serif;
+        font-size: 15px;
+      }
+
     }
 
     & .c_02_nav {
@@ -39,6 +47,12 @@
         height: 45px;
         border-radius: 25px;
         background-color: #f7e8ad;
+
+        & a{
+          text-decoration: none;
+          font-family: "Chivo", sans-serif;
+          color: #52756e;
+        }
       }
     }
   }
@@ -84,16 +98,23 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        & p {
+          font-family: "Chivo", sans-serif;
+        }
       }
 
       & .r_c_01_middle {
         & h1 {
+          font-family: "Playfair Display", serif;
           font-size: 70px;
         }
 
         & h3 {
+          font-family: "Chivo", sans-serif;
           padding-top: 10px;
-          font-size: 25px;
+          letter-spacing: 1px;
+          font-size: 12px;
         }
       }
 
