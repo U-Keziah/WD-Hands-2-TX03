@@ -37,6 +37,7 @@
     height: 64vh;
     animation: bgcolor 5s ease-in-out infinite;
     z-index: 1;
+  
 
     & .gojo01 {
       position: absolute;
@@ -57,6 +58,10 @@
       width: 30vw;
       line-height: 35px;
       text-align: justify;
+      transition: all 1s ease;
+      &:hover{
+      transform: rotateY(360deg);
+      }
     }
 
     & .middle_container_01 {
@@ -67,9 +72,9 @@
 
       & h1 {
         font-size: 130px;
-        color: black;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: white;
+        letter-spacing: 2px;
+        color: white;
+        border-radius: 25px;
       }
 
       & .middle_container_nav {
@@ -79,6 +84,7 @@
 
         & a {
           display: flex;
+          font-family: "Montserrat", sans-serif;
           align-items: center;
           justify-content: center;
           text-decoration: none;
@@ -168,16 +174,24 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        & p {
+          font-family: "Chivo", sans-serif;
+        }
       }
 
       & .r_c_01_middle {
         & h1 {
           font-size: 70px;
+          font-family: "Playfair Display", serif;
+
         }
 
         & h3 {
+          font-family: "Chivo", sans-serif;
           padding-top: 10px;
-          font-size: 25px;
+          letter-spacing: 1px;
+          font-size: 15px;
         }
       }
 
@@ -208,6 +222,7 @@
           }
 
           & i {
+            color: #52756e;
             font-size: 25px;
           }
         }
@@ -255,7 +270,7 @@
         align-items: center;
         background-color: #241f1f82;
         border: 2px solid rgb(208, 194, 114);
-        color: white;
+        color: gold;
         height: 100px;
         font-family: "Chivo", sans-serif;
         border-radius: 25px;
@@ -289,7 +304,7 @@
           height: 50px;
           width: 500px;
           background-color: #33333345;
-          color: white;
+          color: black;
           border-radius: 25px;
           border: 2px solid rgb(208, 194, 114);
         }
