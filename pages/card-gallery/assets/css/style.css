@@ -104,45 +104,65 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   padding: 20px;
 
   & .container_01 {
-    margin: 25px;
-    width: 50vw;
+    position: relative;
+    width: 70vw;
     height: 65vh;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-around;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+
 
     &::before {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 25vw;
+      height: 65vh;
       filter: blur(3px);
       background-size: cover;
       background-position: center center;
       z-index: -1;
       background-image: url(../img/bgSky.jpg);
+      transition: all 0.5s ease;
     }
 
     & .left_container_01 {
-      width: 20vw;
-      padding-left: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25vw;
+      height: 65vh;
+
+      &:hover + .right_container_01 {
+        opacity: 100%;   
+        transition: all 1s ease;     
+      }
     }
+
+    &:hover::before{
+      width: 50vw; 
+      transition: all 0.5s ease;
+
+    }
+
+   
 
     & .right_container_01 {
       display: flex;
       flex-direction: column;
       width: 19vw;
       padding: 20px;
+      opacity: 0%;
+      transition: all 1s ease;     
+
+      &:hover{
+        opacity: 100%;
+      }
+
 
       & .r_c_01_top {
         display: flex;
@@ -196,6 +216,7 @@
   }
 }
 
+
 .section_03 {
   padding: 30px;
   display: flex;
@@ -232,10 +253,11 @@
         padding: 25px;
         display: flex;
         align-items: center;
-        background-color: #33333345;
+        background-color: #241f1f82;
         border: 2px solid rgb(208, 194, 114);
-        color: #ffffff;
+        color: white;
         height: 100px;
+        font-family: "Chivo", sans-serif;
         border-radius: 25px;
         font-size: 15px;
         line-height: 2;
@@ -250,6 +272,11 @@
           font-size: 45px;
           color: #d0c272;
           height: 15vh;
+          transition: all 0.5s ease-out;
+
+          &:hover {
+            font-size: 6.5vh;
+          }
         }
 
         & .start {
@@ -281,8 +308,6 @@
     & .c_02_nav {
       display: flex;
       flex-direction: row;
-      background-color: #d0c272;
-      border-radius: 25px;
       overflow-x: auto;
       width: 450px;
       white-space: normal;
@@ -321,7 +346,8 @@
   padding: 30px;
 
   & .S4_container_02 {
-    background-color: rgb(121, 167, 197);
+    background-color: #f6cf56;
+    font-family: "Yeseva One", serif;
     padding: 30px;
     height: 70vh;
     width: 65vw;
@@ -394,6 +420,7 @@
       justify-content: center;
 
       & h1 {
+        font-family: "Yeseva One", serif;
         font-size: 55px;
         letter-spacing: 2px;
         border-bottom: 25px solid black;
@@ -401,6 +428,8 @@
       }
 
       & h3 {
+        font-family: "Yeseva One", serif;
+
         height: 25px;
         margin-top: 35px;
         font-size: 25px;
@@ -408,12 +437,15 @@
       }
 
       & .p1 {
-        letter-spacing: 1px;
+        font-family: "Radio Canada", sans-serif;
+
         padding-bottom: 15px;
         border-bottom: 2px solid black;
       }
 
       & .p2 {
+        font-family: "Radio Canada", sans-serif;
+
         letter-spacing: 1px;
         border-top: 3px solid black;
         margin-top: 5px;
@@ -423,6 +455,8 @@
       }
 
       & .p3 {
+        font-family: "Radio Canada", sans-serif;
+
         letter-spacing: 1px;
         height: 15px;
         width: 262px;
@@ -444,12 +478,28 @@
 }
 
 .section_05 {
-  width: 100%;
-  height: 100%;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
 
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(to right, transparent 25%, black 45%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+
+    & .bgImage {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: grayscale(1);
+      z-index: -1; /* move it behind the.S52_container3 element */
+    }
+}
+  
   .S52_container3 {
     width: 35vw;
     height: 85vh;
@@ -457,31 +507,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #3d3d75;
 
     & .S5_container_text {
-      height: 15%;
+      height: 8%;
+      width: 45%;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: all 0.5s ease;
+      color: white;
+      font-family: "Cinzel Decorative", serif;
+
 
       &:hover + .S5_container_nav {
         transform: translateY(1vh);
-        z-index: 1;
+        opacity: 100%;
         transition: all 0.5s ease;
       }
       
-
 
       & h3 {
         font-size: 25px;
         letter-spacing: 1px;
         &:hover {
-          animation: colorful 3s ease infinite;
-        }
-
-       
+          animation: colorful 1.5s ease infinite;
+        }    
       }
     }
     
@@ -489,33 +539,41 @@
 
 
     & .S5_container_nav {
-      position: relative;;
+      position: relative;
       width: 45%;
       height: 45vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      z-index: -1;
-      translate: (0px,-150vh);
+      opacity: 0%;
+     
+      &:hover{
+        translate: (0px,-150vh);
+        
+        opacity: 100%;
+      }
 
         & .op {
           text-align: end;
-          background-color: rgba(255, 0, 0, 0.429);
+          background-color: rgb(151, 35, 35);
           color: white;
           width: 18vw;
           text-decoration: none;
           padding: 15px;
-       
+          font-family: "Economica", sans-serif;
+letter-spacing: 3px;
          
-          ::before{
-            transform: translateY(-50vh);
-            
-        }
+         &:hover {
+          background-color: white;
+          color: black;
+         }
+         
+   
       }
     }
  }
-}
+
 
 
 
