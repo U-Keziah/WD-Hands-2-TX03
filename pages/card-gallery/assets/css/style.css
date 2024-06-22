@@ -139,7 +139,7 @@
       background-size: cover;
       background-position: center center;
       z-index: -1;
-      background-image: url(../img/bgSky.jpg);
+      background-image: url(../img/bg-sky.jpg);
       transition: all 0.5s ease;
     }
 
@@ -261,7 +261,7 @@
     background-size: cover;
     background-position: center center;
     z-index: -1;
-    background-image: url(../img/bgBuilding01.jpg);
+    background-image: url(../img/bg-building-01.jpg);
   }
 
   & .S3_container_02 {
@@ -518,7 +518,7 @@
       width: 100%;
       height: 100%;
       filter: grayscale(1);
-      z-index: -1; /* move it behind the.S52_container3 element */
+      z-index: -1; 
     }
 }
   
